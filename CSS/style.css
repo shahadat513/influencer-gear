@@ -179,6 +179,33 @@ nav ul li a {
   font-weight: 700;
 }
 
+/* Footer Section */
+.footer {
+  margin-top: 100px;
+  text-align: center;
+  background-color: rgb(4, 2, 62);
+  color: #fff;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 50px;
+}
+
+.footer-description {
+  font-size: .87rem;
+  font-weight: 600;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding-bottom: 50px;
+  
+}
+
 /* Responsive Area */
 
 /* Mobile version */
@@ -231,19 +258,23 @@ nav ul {
   grid-template-columns: 1fr;
   gap: 0;
 }
+
 /* Feature section */
-.features{
+.features {
   flex-direction: column-reverse;
 }
+
 .features-content {
   margin-left: 0;
   text-align: center;
   margin-bottom: 10px;
 }
-.features-title{
+
+.features-title {
   font-size: 1.5rem;
 }
-.feature-img img{
+
+.feature-img img {
   width: 100%;
 }
 }
@@ -283,7 +314,8 @@ nav ul {
   .single-box {
     text-align: center;
   }
-  .features{
+
+  .features {
     flex-direction: column;
     text-align: center;
   }
