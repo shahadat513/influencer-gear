@@ -5,11 +5,39 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* Shared Style */
+* {
+  max-width: 1440px;
+}
+
+.btn-primary {
+  border-radius: 41px;
+  background: rgb(224, 44, 109);
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px;
+  border: 0;
+
+}
+
+.arrow {
+  padding: 5px;
+}
+
 /* Header Style */
+
+/* Navbar section */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 nav ul {
@@ -20,7 +48,7 @@ nav ul li {
   list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   color: rgb(58, 58, 58);
   text-align: center;
@@ -28,12 +56,237 @@ nav ul li a{
   font-weight: 600;
   padding: 35px;
 }
-.shop, .search{
+
+.shop,
+.search {
   padding: 10px;
 }
 
-.header-title {
+.section-title {
   color: rgb(58, 58, 58);
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+/* Banner section */
+.banner {
+  display: flex;
+}
+
+.banner-content {
+  margin-right: 130px;
+}
+
+.banner-title {
+  color: rgb(58, 58, 58);
+  font-size: 3.25rem;
+  font-weight: 700;
+}
+
+.banner-description {
+  color: rgb(58, 58, 58);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.banner img {
+  background-image: url("../images/Circle\ design.svg");
+  border: 2px dashed gray;
+}
+
+/* Sponsors Section */
+
+.sponsors {
+  border: 1px solid rgb(222, 218, 218);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 70px;
+  gap: 20px;
+}
+
+.sponsors img img {
+  width: 90px;
+  padding: 10px;
+}
+
+/* Collection Section */
+.collection-title {
+  text-align: center;
+  margin-top: 130px;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+}
+
+.single-box {
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
+
+.single-box-title {
+  color: rgb(24, 25, 31);
+  font-size: 1.75rem;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 29px;
+}
+
+.price {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 29px;
+}
+
+.single-box-description {
+  color: rgb(120, 120, 133);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 29px;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+
+.features-content {
+  margin-left: 80px;
+}
+
+.features-title {
+  color: rgb(10, 8, 38);
+  font-size: 2.40rem;
+  font-weight: 700;
+}
+
+.feature-description {
+  color: rgb(108, 108, 108);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Responsive Area */
+
+/* Mobile version */
+@media screen and (max-width:576px) {
+  body {
+    margin: 0;
+  }
+
+  nav,
+  nav ul,
+  .banner,
+  {
+  flex-direction: column;
+}
+
+nav,
+nav ul {
+  flex-direction: column;
+}
+
+.banner {
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+.banner-img img {
+  width: 70%;
+}
+
+.banner-content {
+  margin: 0;
+}
+
+.banner-title {
+  font-size: 1.55rem;
+}
+
+.banner-description {
+  font-size: .50rem;
+}
+
+.sponsors {
+  border: 0;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* box section */
+.box {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+/* Feature section */
+.features{
+  flex-direction: column-reverse;
+}
+.features-content {
+  margin-left: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.features-title{
+  font-size: 1.5rem;
+}
+.feature-img img{
+  width: 100%;
+}
+}
+
+/* Tablet version */
+@media screen and (min-width:576px) and (max-width:992px) {
+  body {
+    margin: 0;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+  nav,
+  nav ul {
+    flex-direction: column;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .sponsors {
+    border: 0;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .box {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .single-box {
+    text-align: center;
+  }
+  .features{
+    flex-direction: column;
+    text-align: center;
+  }
+
+
 }
